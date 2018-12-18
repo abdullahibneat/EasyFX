@@ -1,0 +1,84 @@
+html {
+  margin: -8px;
+}
+/* Nav bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.easy_nav-container {
+  background-color: rgba(76, 175, 80, 0.3);
+  display: flex;
+  position: absolute;
+  width: 100%;
+  box-sizing : border-box;
+  padding: 50px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.easy_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.easy_nav-link {
+  padding-right: 8px;
+}
+
+.easy_nav {
+  display: flex;
+}
+
+.easy_nav-right {
+  margin-left:auto;
+}
+
+.easy_nav-toggle {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .easy_nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .easy_nav,
+  .easy_nav-container {
+    flex-direction: column;
+  }
+
+  .easy_nav {
+    display:none;
+  }
+
+  .easy_nav-right {
+    margin-left:0;
+  }
+
+  .easy_nav-toggle-show {
+    display: flex;
+  }
+
+  .easy_nav-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.section1 {
+  background-image: url("https://images.unsplash.com/photo-1545076920-abaf4e82b53a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80");
+}

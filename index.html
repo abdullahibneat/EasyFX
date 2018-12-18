@@ -16,17 +16,74 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-<body>
+<body style="z-index: 0">
 
 <!-- Begin Body
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-Hello world!
+
+  <!-- Nav bar
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="easy_nav-container">
+    <div class="easy_nav-link easy_logo">
+      Website title
+    </div>
+    <div class="easy_nav-link easy_nav-toggle">
+      &#9776;
+    </div>
+    <nav class="easy_nav easy_nav-center">
+      <div class="easy_nav-link">
+        Longer Link 1
+      </div>
+      <div class="easy_nav-link">
+        Longer Link 2
+      </div>
+      <div class="easy_nav-link">
+        Link 1
+      </div>
+    </nav>
+    <nav class="easy_nav easy_nav-right">
+      <div class="easy_nav-link">
+        Link 2
+      </div>
+      <div class="easy_nav-link">
+        Link 3
+      </div>
+    </nav>
+  </div>
+
+  <!-- Home banner
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="section section1">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column">
+        <h1>Watch, Learn & Profit together</h1>
+        <p>Learn from the best inside our Live Forex Trading Room. Live Streams, Forex Signals, Video Courses, Chat and much more.</p>
+      </div>
+      <div class="one-half column">
+        <h2>Pic here</h2>
+        <p>Animations as well</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Nav bar script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript">
+  function easy_nav_toggle() {
+    const navs = document.querySelectorAll('.easy_nav')
+    navs.forEach(nav => nav.classList.toggle('easy_nav-toggle-show'));
+  }
+  document.querySelector('.easy_nav-toggle').addEventListener('click', easy_nav_toggle);
+  </script>
 
 <!-- End Body
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
