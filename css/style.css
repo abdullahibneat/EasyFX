@@ -126,7 +126,7 @@
 
 /* Separator
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.section1 svg {
+.section1 svg, .section2 svg {
   position: absolute;
   display: block;
   bottom: 0;
@@ -142,10 +142,27 @@
 }
 
 .section2 {
-  background-color: orange;
+  background-color: white;
   padding: 100px 0 200px;
 }
 
+.section2 h2 {
+  padding: 10px;
+}
+
+.section2 .fas {
+  font-size: 2em;
+  color: #03a8e6;
+}
+
 .section3 {
-  background-color: grey;
+  background-color: #7db1de;
+}
+
+.section4 {
+  background-color: #7a85c4;
+}
+
+.section5 {
+  background-color: #f500d4;
 }
