@@ -18,6 +18,12 @@
   z-index: 1;
 }
 
+.easy_nav-container a, .easy_nav-container a:hover {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
 .easy_logo {
   display: flex;
   align-items: center;
@@ -56,10 +62,28 @@
   .easy_nav,
   .easy_nav-container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .easy_nav-mobile {
+    background-color: rgba(1,41,57,.9);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
   }
 
   .easy_nav {
     display:none;
+  }
+
+  .easy_nav:first-of-type {
+    margin-top: 10em;
+  }
+
+  .easy_nav-link {
+    padding: 0.5em;
+    font-size: 1.5em;
   }
 
   .easy_nav-right {
