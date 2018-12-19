@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/solid.css" integrity="sha384-aj0h5DVQ8jfwc8DA7JiM+Dysv7z+qYrFYZR+Qd/TwnmpDI6UaB3GJRRTdY8jYGS4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/fontawesome.css" integrity="sha384-WK8BzK0mpgOdhCxq86nInFqSWLzR5UAsNg0MGX9aDaIIrFWQ38dGdhwnNCAoXFxL" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -63,10 +64,10 @@
     <div class="container">
       <div class="row">
         <div class="two-thirds column">
-          <h1>Watch, Learn & Profit together</h1>
-          <p>Learn from the best inside our Live Forex Trading Room. Live Streams, Forex Signals, Video Courses, Chat and much more.</p>
+          <h1 data-aos="fade-down">Watch, Learn & Profit together</h1>
+          <p data-aos="fade-up">Learn from the best inside our Live Forex Trading Room. Live Streams, Forex Signals, Video Courses, Chat and much more.</p>
         </div>
-        <div class="one-third column">
+        <div class="one-third column" data-aos="fade-left">
           <h2>Pic here</h2>
           <p>Animations as well</p>
         </div>
@@ -83,28 +84,28 @@
   <!-- Features
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="section section2">
-    <center><h2>Looking for an easy way to trade?</h2>
+    <center data-aos="fade-down"><h2>Looking for an easy way to trade?</h2>
     <h4>You've found it.</h4></center><br><br>
     <div class="container">
       <div class="row">
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-right">
           <i class="fas fa-truck"></i>
           <h5><b>Real-time delivery</b></h5>
           <p>Our signals are delivered to any device in real time</p>
         </div>
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-left">
           <i class="fas fa-users"></i>
           <h5><b>Expert analysis</b></h5>
           <p>Our signals are formulated using proven analysis techniques and strategies</p>
         </div>
       </div><br>
       <div class="row">
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-right">
           <i class="fas fa-signal"></i>
           <h5><b>Low-cost signals</b></h5>
           <p>Daily Forex signals delivered from just £29.99 per month</p>
         </div>
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-left">
           <i class="fas fa-question"></i>
           <h5><b>New feature</b></h5>
           <p>I don't know what to type here... Maybe you could help? XD</p>
@@ -120,13 +121,13 @@
       <path fill="white" d="M0 0 C 50 100 80 100 100 0 Z"></path>
     </svg>
     <div class="container">
-      <center><h2>Wondering how it works?</h2></center><br><br>
+      <center><h2 data-aos="fade-down">Wondering how it works?</h2></center><br><br>
       <div class="row">
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-right">
           <h3>Pic here</h3>
           <p>Animations as well</p>
         </div>
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-left">
           <h3>① Choose your signals</h3>
           <p>Choose the signals package that suits you</p>
         </div>
@@ -137,11 +138,11 @@
   <div class="section section4">
     <div class="container">
       <div class="row">
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-right">
           <h3>② Signals activated</h3>
           <p>One of the team will activate your signals service</p>
         </div>
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-left">
           <h3>Pic here</h3>
           <p>Animations as well</p>
         </div>
@@ -152,11 +153,11 @@
   <div class="section section5">
     <div class="container">
       <div class="row">
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-right">
           <h3>Pic here</h3>
           <p>Animations as well</p>
         </div>
-        <div class="one-half column">
+        <div class="one-half column" data-aos="fade-left">
           <h3>③ Signals delivered</h3>
           <p>Sit back and relax! Signals will be delivered in real time to your device</p>
         </div>
@@ -164,14 +165,18 @@
     </div>
   </div>
 
-  <!-- Nav bar script
+  <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script type="text/javascript">
   function easy_nav_toggle() {
     const navs = document.querySelectorAll('.easy_nav')
     navs.forEach(nav => nav.classList.toggle('easy_nav-toggle-show'));
     document.querySelector('.easy_nav-container').classList.toggle('easy_nav-mobile');
   }
+  AOS.init({
+    duration: 1000,
+  });
   document.querySelector('.easy_nav-toggle').addEventListener('click', easy_nav_toggle);
   </script>
 
