@@ -118,14 +118,17 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
   padding: 200px 0;
+  background-color: white;
   position: relative;
   overflow-x: hidden;
+  color: white;
+  text-align: center;
 }
 
 .section1 {
   background-color: rgba(1,41,57,.6);
   padding: 350px 0;
-  color: white;
+  text-align: left;
 }
 
 .section1 video {
@@ -154,12 +157,18 @@ svg {
 @media only screen and (max-width: 768px) {
   .section1 {
     padding: 200px 0 100px !important;
+    text-align: center;
   }
 }
 
 .section2 {
   background-color: white;
   padding: 100px 0;
+  color: black;
+}
+
+.large {
+  font-size: 10em;
 }
 
 .section2 h2 {
@@ -172,7 +181,11 @@ svg {
 }
 
 .section3 {
-  background-color: #7db1de;
+  background: url('https://www.easyfx.com/Images/homepage/sections/section_spendlike/section-spend-local.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 250px;
+  color: black;
 }
 
 .section3 svg {
@@ -180,9 +193,24 @@ svg {
 }
 
 .section4 {
-  background-color: #7a85c4;
+  background: #fff url('https://www.easyfx.com/Images/homepage/sections/section_smartrates/section-rates.png') center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 250px;
+  color: black;
 }
 
 .section5 {
-  background-color: #f500d4;
+  color: black;
+}
+
+.section6 {
+  background: url('https://www.easyfx.com/Images/homepage/sections/section_apppro/section-pro.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 250px;
+}
+
+.medium {
+  font-size: 5em;
 }
