@@ -9,19 +9,26 @@
 .easy_nav-container {
   font-size: 1.2em;
   display: flex;
-  position: absolute;
+  align-items: center;
+  position: fixed;
   width: 100%;
   box-sizing : border-box;
   padding: 75px 50px 50px;
   font-family: sans-serif;
   color: white;
   z-index: 1;
+  transition: 0.2s;
 }
 
 .easy_nav-container a, .easy_nav-container a:hover {
   color: white;
   text-decoration: none;
   margin: 0 1em;
+}
+
+.easy_nav-scroll {
+  padding: 20px;
+  background-color: rgba(1,41,57,.9);
 }
 
 .easy_logo {
@@ -44,6 +51,7 @@
 
 .easy_nav-toggle {
   display: none;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
@@ -63,6 +71,10 @@
   .easy_nav-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .easy_nav-scroll {
+    padding: 10px;
   }
 
   .easy_nav-mobile {

@@ -33,7 +33,7 @@
 
   <!-- Nav bar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="easy_nav-container">
+  <div id="easy_nav-container" class="easy_nav-container">
     <div class="easy_nav-link easy_logo">
       <a href="index.html"><img src="images/logo.png"></a>
     </div>
@@ -174,10 +174,19 @@
     navs.forEach(nav => nav.classList.toggle('easy_nav-toggle-show'));
     document.querySelector('.easy_nav-container').classList.toggle('easy_nav-mobile');
   }
+  function navScroll() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById('easy_nav-container').classList.add('easy_nav-scroll')
+    } else {
+      document.getElementById('easy_nav-container').classList.remove('easy_nav-scroll')
+    }
+  }
   AOS.init({
     duration: 1000,
   });
   document.querySelector('.easy_nav-toggle').addEventListener('click', easy_nav_toggle);
+  window.onscroll = function() {navScroll()};
+  
   </script>
 
 <!-- End Body
