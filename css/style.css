@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0
 }
+
 /* Nav bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .easy_nav-container {
@@ -182,8 +183,6 @@ svg {
 
 .section3 {
   background: url('https://www.easyfx.com/Images/homepage/sections/section_spendlike/section-spend-local.jpg') center no-repeat;
-  background-size: cover;
-  position: relative;
   padding-top: 250px;
   color: black;
 }
@@ -194,23 +193,42 @@ svg {
 
 .section4 {
   background: #fff url('https://www.easyfx.com/Images/homepage/sections/section_smartrates/section-rates.png') center no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-top: 250px;
   color: black;
 }
 
 .section5 {
-  color: black;
+  background: url('https://www.easyfx.com/Images/homepage/sections/section_apppro/section-pro.jpg') center no-repeat;
 }
 
 .section6 {
-  background: url('https://www.easyfx.com/Images/homepage/sections/section_apppro/section-pro.jpg') center no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-top: 250px;
+  color: black;
 }
 
 .medium {
   font-size: 5em;
+}
+
+.section7 {
+  background: url('https://www.easyfx.com/Images/info-bottom/info-section-app.jpg') center no-repeat;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer {
+  background-color: #01405b;
+  color: white;
+}
+
+footer a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px;
+  color: grey;
 }
