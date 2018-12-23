@@ -152,7 +152,7 @@
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
-  padding: 200px 0;
+  padding: 300px 0;
   background-color: white;
   position: relative;
   overflow-x: hidden;
@@ -170,7 +170,7 @@
 /* Font Awesome
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .fas {
-  color: #ff7300;
+  color: white;
 }
 .large {
   font-size: 10em;
@@ -184,7 +184,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 footer {
-  background-color: #01405b;
+  padding: 100px 0;
+  background-color: #ff7d00;
   color: white;
 }
 
@@ -195,8 +196,12 @@ footer a {
   margin: 20px 0;
 }
 
+footer a:hover {
+  color: white;
+}
+
 .copyright {
   text-align: center;
   padding: 20px;
-  color: grey;
+  color: rgba(255,255,255,0.8);
 }
