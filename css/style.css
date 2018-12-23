@@ -32,10 +32,14 @@
   background-color: rgba(1,41,57,.9);
 }
 
-.easy_logo {
+.easy_logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.easy_logo {
+  max-width: 10em;
 }
 
 .easy_nav-link {
@@ -62,7 +66,7 @@
     transform: translateX(-50%);
   }
 
-  .easy_logo {
+  .easy_logo-container {
     padding-left: 5vw;
   }
 }
@@ -92,6 +96,10 @@
 
   .easy_nav:first-of-type {
     margin-top: 10em;
+  }
+
+  .easy_logo {
+    max-width: 5em;
   }
 
   .easy_nav-link {
