@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Page | EasyFX</title>
+  <title>EasyFX | Easy Pips - Easy Signals - Easy Life.</title>
   <meta name="description" content="">
   <meta name="author" content="EasyFX">
 
@@ -17,6 +17,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/solid.css" integrity="sha384-aj0h5DVQ8jfwc8DA7JiM+Dysv7z+qYrFYZR+Qd/TwnmpDI6UaB3GJRRTdY8jYGS4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/fontawesome.css" integrity="sha384-WK8BzK0mpgOdhCxq86nInFqSWLzR5UAsNg0MGX9aDaIIrFWQ38dGdhwnNCAoXFxL" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style type="text/css">
@@ -87,25 +89,25 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="easy_nav-container" class="easy_nav-container">
     <div class="easy_nav-link easy_logo-container">
-      <a href="index.html"><img id="easy_logo" class="easy_logo" src="images/logo.png"></a>
+      <a href="index.html"><img id="easy_logo" class="easy_logo"></a>
     </div>
     <div class="easy_nav-link easy_nav-toggle">
       &#9776;
     </div>
     <nav class="easy_nav easy_nav-center">
       <div class="easy_nav-link">
-        <a href="#">Personal</a>
+        <a href="page.html">Personal</a>
       </div>
       <div class="easy_nav-link">
-        <a href="#">Business</a>
+        <a href="page.html">Business</a>
       </div>
     </nav>
     <nav class="easy_nav easy_nav-right">
       <div class="easy_nav-link">
-        <a href="#">Create account</a>
+        <a href="page.html">Create account</a>
       </div>
       <div class="easy_nav-link">
-        <a href="#">Sign in</a>
+        <a href="page.html">Sign in</a>
       </div>
     </nav>
   </div>
@@ -166,9 +168,9 @@ This time next week you will wish you had started today…</p>
   <!-- Telegram
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="section section4">
-      <h2 data-aos="fade-down">Join our telegram group</h2>
-      <h4 data-aos="fade-down">And something magical will happen?</h4><br><br>
-      <a href="#" class="button button-primary" data-aos="fade-left">Join</a>
+      <h2 data-aos="fade-down">Join our <b>FREE</b> telegram group</h2>
+      <h4 data-aos="fade-down">And start the journey to become financially free….</h4><br><br>
+      <a href="page.html" class="button button-primary" data-aos="fade-left">Join</a>
   </div>
 
   <!-- Footer
@@ -177,23 +179,23 @@ This time next week you will wish you had started today…</p>
     <div class="container">
       <div class="row">
         <div class="one-third column">
-          <a style="margin-top: 0" href="#">About</a>
-          <a href="#">Community</a>
-          <a href="#">FAQs</a>
-          <a href="#">Help Center</a>
-          <a href="#">Forum</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy</a>
-          <a href="#">Complaints</a>
-          <a href="#">Security & Fraud</a>
+          <a style="margin-top: 0" href="page.html">About</a>
+          <a href="page.html">Community</a>
+          <a href="page.html">FAQs</a>
+          <a href="page.html">Help Center</a>
+          <a href="page.html">Forum</a>
+          <a href="page.html">Terms & Conditions</a>
+          <a href="page.html">Privacy</a>
+          <a href="page.html">Complaints</a>
+          <a href="page.html">Security & Fraud</a>
         </div>
         <div class="one-third column">
-          <a style="margin-top: 0" href="#">Personal</a>
-          <a href="#">Business</a>
-          <a href="#">One Card</a>
-          <a href="#">EasyFX App</a>
-          <a href="#">EasyFX Pro</a>
-          <a href="#">Create account</a>
+          <a style="margin-top: 0" href="page.html">Personal</a>
+          <a href="page.html">Business</a>
+          <a href="page.html">One Card</a>
+          <a href="page.html">EasyFX App</a>
+          <a href="page.html">EasyFX Pro</a>
+          <a href="page.html">Create account</a>
         </div>
         <div class="one-third column">
           <b>Contact us</b><br>
@@ -217,13 +219,18 @@ This time next week you will wish you had started today…</p>
   function easy_nav_toggle() {
     const navs = document.querySelectorAll('.easy_nav')
     navs.forEach(nav => nav.classList.toggle('easy_nav-toggle-show'));
-    document.querySelector('.easy_nav-container').classList.toggle('easy_nav-mobile');
+    document.getElementById('easy_nav-container').classList.toggle('easy_nav-mobile');
+    document.getElementsByClassName('easy_nav-toggle')[0].classList.toggle('easy_nav-toggle-show')
+    document.getElementById('easy_logo').classList.toggle('easy_logo-mobile')
+
   }
   function navScroll() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       document.getElementById('easy_nav-container').classList.add('easy_nav-scroll')
+      document.getElementById('easy_logo').classList.add('easy_logo-scroll')
     } else {
       document.getElementById('easy_nav-container').classList.remove('easy_nav-scroll')
+      document.getElementById('easy_logo').classList.remove('easy_logo-scroll')
     }
   }
   AOS.init({
