@@ -40,6 +40,11 @@
 
 .easy_logo {
   max-width: 10em;
+  transition: 0.2s;
+}
+
+.easy_logo-scroll {
+  max-width: 5em;
 }
 
 .easy_nav-link {
@@ -136,6 +141,9 @@
 
 /* Font Awesome
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.fas {
+  color: #ff7300;
+}
 .large {
   font-size: 10em;
 }
