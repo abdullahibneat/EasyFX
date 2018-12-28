@@ -92,7 +92,7 @@
   }
 
   .easy_nav-scroll {
-    padding: 10px;
+    padding: 0;
   }
 
   .easy_nav-scroll .easy_nav-toggle {
@@ -117,6 +117,11 @@
 
   .easy_logo {
     max-width: 5em;
+  }
+
+  .easy_logo-scroll {
+    max-width: 3em;
+    margin-top: 5px;
   }
 
   .easy_logo-mobile {
