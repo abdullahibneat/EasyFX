@@ -21,10 +21,14 @@
   transition: 0.2s;
 }
 
-.easy_nav-container a, .easy_nav-container a:hover {
+.easy_nav-container a {
   color: white;
   text-decoration: none;
   margin: 0 1em;
+}
+
+.easy_nav-container a:hover {
+  color: rgb(255,115,0);
 }
 
 .easy_nav-scroll {
@@ -166,9 +170,34 @@
   background-size: cover !important;
 }
 
+.join {
+  color: black;
+}
+
+.telegram {
+  padding: 0 !important;
+  background-image: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+  display: table;
+  width: 100%
+}
+
+.telegram > div {
+  display: table-cell;
+  padding: 4em;
+}
+
+.icmarkets {
+  background: url(https://www.icmarkets.com/assets/img/single_market_page/refer-a-friend-facts-bg.png) no-repeat;
+  background-size: cover;
+}
+
 @media only screen and (max-width: 768px) {
   .section {
     padding: 100px 10px;
+  }
+
+  .telegram > div {
+    display: block;
   }
 }
 
