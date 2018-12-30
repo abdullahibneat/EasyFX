@@ -66,6 +66,10 @@
   display: flex;
 }
 
+.easy_nav-mobile-home {
+  display: none;
+}
+
 .easy_nav-right {
   margin-left:auto;
 }
@@ -116,7 +120,7 @@
   }
 
   .easy_nav:first-of-type {
-    margin-top: 10em;
+    margin-top: 5em;
   }
 
   .easy_logo {
@@ -135,6 +139,10 @@
   .easy_nav-link {
     padding: 0.5em;
     font-size: 1.5em;
+  }
+
+  .easy_nav-mobile-home {
+    display: block;
   }
 
   .easy_nav-right {
@@ -168,6 +176,21 @@
   color: white;
   text-align: center;
   background-size: cover !important;
+}
+
+.features {
+  background-color: white;
+  padding: 100px 0;
+  color: black;
+}
+
+.features h4 {
+  padding: 0 50px;
+}
+
+.features .fas {
+  font-size: 2em;
+  color: #ff7300;;
 }
 
 .join {

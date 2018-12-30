@@ -102,21 +102,6 @@
         text-align: center;
       }
     }
-
-    .section2 {
-      background-color: white;
-      padding: 100px 0;
-      color: black;
-    }
-
-    .section2 h4 {
-      padding: 0 50px;
-    }
-
-    .section2 .fas {
-      font-size: 2em;
-      color: #ff7300;;
-    }
   </style>
 
   <!-- Favicon
@@ -139,6 +124,9 @@
       &#9776;
     </div>
     <nav class="easy_nav easy_nav-center">
+      <div class="easy_nav-link easy_nav-mobile-home">
+        <a href="index.html">Home</a>
+      </div>
       <div class="easy_nav-link">
         <a href="packages.html">Packages</a>
       </div>
@@ -245,7 +233,7 @@
 
   <!-- Features
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="section section2">
+  <div class="features section">
     <h4 data-aos="fade-down">Receive up to 20 daily signals 3 times a day with a total pip value of 200 ticks (on average).</h4><br><br>
     <div class="container">
       <div class="row">
@@ -297,30 +285,25 @@
     <div class="container">
       <div class="row">
         <div class="one-third column">
-          <a style="margin-top: 0" href="page.html">About</a>
-          <a href="page.html">Community</a>
-          <a href="page.html">FAQs</a>
-          <a href="page.html">Help Center</a>
-          <a href="page.html">Forum</a>
-          <a href="page.html">Terms & Conditions</a>
-          <a href="page.html">Privacy</a>
-          <a href="page.html">Complaints</a>
-          <a href="page.html">Security & Fraud</a>
+          <center>
+            <!-- InstaWidget -->
+            <a href="https://instawidget.net/v/user/easyfx1" id="link-9e7e05ab3ddfc15d94a3c16b95e250e5f732d845e8494729c4313387383040d5">@easyfx1</a>
+            <script src="https://instawidget.net/js/instawidget.js?u=9e7e05ab3ddfc15d94a3c16b95e250e5f732d845e8494729c4313387383040d5&width=20em"></script>
+          </center>
         </div>
-        <div class="one-third column">
+        <div class="one-third column" style="padding-left: 3em">
           <a style="margin-top: 0" href="page.html">Personal</a>
-          <a href="page.html">Business</a>
-          <a href="page.html">One Card</a>
-          <a href="page.html">EasyFX App</a>
-          <a href="page.html">EasyFX Pro</a>
-          <a href="page.html">Create account</a>
+          <a href="index.html">Home</a>
+          <a href="package.html">Packages</a>
+          <a href="forex.html">What is Forex</a>
+          <a href="brokers.html">Brokers</a>
         </div>
         <div class="one-third column">
           <b>Contact us</b><br><br>
           <i>Do you have questions about EasyFX, or do you need assistance with your account? Our team is here to help.</i><br><br>
-          <b>Monday to Friday<br>
-          09:00am - 05:30pm<br><br>
-          +44 (0) 20 1111 1111</b>
+          <p style="margin:0"><span style="font-weight: bold;">Instagram: </span style="font-weight: bold;"><a style="display: inline-block;" href="instagram.com/easyfx1">@easyfx1</a></p>
+          <p style="margin:0"><span style="font-weight: bold;">Twitter: </span style="font-weight: bold;"><a style="display: inline-block;" href="twitter.com/easyfx1">@easyfx1</a></p>
+          <p style="margin:0"><span style="font-weight: bold;">Email: </span style="font-weight: bold;"><a href="#" style="display: inline-block;">info@easyfx.com</a></p>
         </div>
       </div>
       <div class="row copyright">
@@ -333,31 +316,7 @@
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script type="text/javascript">
-  function easy_nav_toggle() {
-    const navs = document.querySelectorAll('.easy_nav')
-    navs.forEach(nav => nav.classList.toggle('easy_nav-toggle-show'));
-    document.getElementById('easy_nav-container').classList.toggle('easy_nav-mobile');
-    document.getElementsByClassName('easy_nav-toggle')[0].classList.toggle('easy_nav-toggle-show')
-    document.getElementById('easy_logo').classList.toggle('easy_logo-mobile')
-
-  }
-  function navScroll() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById('easy_nav-container').classList.add('easy_nav-scroll')
-      document.getElementById('easy_logo').classList.add('easy_logo-scroll')
-    } else {
-      document.getElementById('easy_nav-container').classList.remove('easy_nav-scroll')
-      document.getElementById('easy_logo').classList.remove('easy_logo-scroll')
-    }
-  }
-  AOS.init({
-    duration: 1000,
-  });
-  document.querySelector('.easy_nav-toggle').addEventListener('click', easy_nav_toggle);
-  window.onscroll = function() {navScroll()};
-  
-  </script>
+  <script src="js/custom.js"></script>
 
 <!-- End Body
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
