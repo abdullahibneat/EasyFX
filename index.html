@@ -72,6 +72,29 @@
       font-size: 2em;
       color: #ff7300;;
     }
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(1.0);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1.0);
+        }
+    }
+
+    .new {
+      font-size: smaller;
+      color: white;
+      display: inline-block;
+      margin: 0 0.5em;
+      background-color: rgb(255,115,0);
+      padding: 0.25em 0.5em;
+      box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+      animation: pulse 2s infinite;
+    }
 
     .section3 {
       background: url('images/home/section3.jpg');
@@ -80,16 +103,6 @@
 
     .section3 svg {
       top: 0;
-    }
-
-    .section3 .button, .section6 .button, .section7 .button {
-      background-color: #ff7300;
-      border-color: #ff7300;
-    }
-
-    .section3 .button:hover, .section3 .button:focus, .section6 .button:hover, .section6 .button:focus, .section7 .button:hover, .section7 .button:focus {
-      background-color: #b55200;
-      border-color: #b55200;
     }
 
     .section4 {
@@ -125,7 +138,7 @@
         <a href="packages.html">Packages</a>
       </div>
       <div class="easy_nav-link">
-        <a href="forex.html">What if Forex</a>
+        <a href="forex.html">What is Forex</a>
       </div>
     </nav>
     <nav class="easy_nav easy_nav-right">
@@ -142,7 +155,7 @@
       <div class="row">
         <div class="two-thirds column">
           <h1 data-aos="fade-down">Maximise your Trading Potential with Live Signals</h1>
-          <p data-aos="fade-up">EasyFX trading experts spot market opportunities and provide you with profitable, easy to follow trading signals.</p>
+          <p data-aos="fade-up">EasyFX trading experts spot market opportunities and provide you with profitable, easy to follow trading signals sent directly to your mobile device in real-time.</p>
         </div>
         <div class="one-third column" data-aos="fade-left">
           <i class="fas fa-chart-bar large"></i>
@@ -183,8 +196,8 @@
         <div class="one-half column" data-aos="fade-left">
           <i class="fas fa-robot"></i>
           <h5><b>Copy Trading (New for 2019)</b></h5>
-          <p>Our Robotized Forex Trading system reproduces trading signals to your own personalised forex account in real time eliminating the need to copy and paste signals manually.<br>
-          <small>To be launched in February 2019.</small></p>
+          <p>Our Robotized Forex Trading system reproduces our High Probability trading signals to your own personalised forex account in real time eliminating the need to copy and paste signals manually.</p>
+          <div class="new">NEW</div><small>To be launched in February 2019.</small>
         </div>
       </div>
     </div>
@@ -216,7 +229,7 @@
       <div class="row">
         <div class="one-half column" data-aos="fade-right">
           <h3>② Signals activated</h3>
-          <p>One of the team will activate your signals service and send you a link to a VIP Telegram group where you will receive signal information, news analytics, support on when to enter and exit a trade profitably as well as well as other trade relevant information.</p>
+          <p>One of the team will activate your signals service and send you a link to a VIP Telegram group where you will receive signal information, news analytics, support on when to enter and exit a trade profitably as well as other trade relevant information.</p>
         </div>
         <div class="one-half column" data-aos="fade-left">
           <i class="fas fa-toggle-on large"></i>
@@ -247,9 +260,8 @@
       <div class="row">
         <div class="one-third column" data-aos="fade-right">
           <i class="fas fa-file-signature medium"></i><br><br>
-          <h3>Sign up</h3>
-          <p>Fill out your details here on the website.</p>
-          <a class="button button-primary" href="packages.html">Sign up now!</a>
+          <h3>Choose a trade package</h3>
+          <a class="button button-primary" href="packages.html">Choose a package</a>
         </div>
         <div class="one-third column" data-aos="fade-up">
           <i class="fas fa-money-bill medium"></i><br><br>
@@ -259,7 +271,7 @@
         <div class="one-third column" data-aos="fade-left">
           <i class="fas fa-chart-line medium"></i><br><br>
           <h3>Profit</h3>
-          <p>Receive high-probability signals and trade like a pro.</p>
+          <p>Receive high-probability signals and trade like a pro within an hour.</p>
         </div>
       </div>
     </div>
@@ -270,12 +282,12 @@
   <div class="telegram section">
     <div class="">
       <h2 data-aos="fade-down">Join our <b>FREE</b> telegram group</h2>
-      <h4 data-aos="fade-down">And start the journey to become financially free….</h4>
+      <h4 data-aos="fade-down">And start the journey to financial freedom….</h4>
       <a href="https://t.me/WolfofFX1" target=”_blank” class="button button-primary" data-aos="fade-left">Join</a>
     </div>
     <div class="icmarkets">
-      <h2 data-aos="fade-down">Get your FREE DEMO account</h2>
-      <h4 data-aos="fade-down">with the best Forex broker now</h4>
+      <h2 data-aos="fade-down">Start Trading Live or Try a Free Demo</h2>
+      <h4 data-aos="fade-down">with our Recommended ECN Broker, IC-Markets</h4>
       <a href="http://icmarkets.com/en/?camp=29457" target=”_blank” class="button button-primary" data-aos="fade-left">Click here</a>
     </div>
   </div>

@@ -201,6 +201,18 @@
   }
 }
 
+/* Button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  background-color: #ff7300 !important;
+  border-color: #ff7300 !important;
+}
+
+.button:hover {
+  background-color: #b55200 !important;
+  border-color: #b55200 !important;
+}
+
 /* Font Awesome
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .fas {
