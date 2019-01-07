@@ -28,16 +28,34 @@
       text-align: left;
     }
 
+    @-webkit-keyframes pulse {
+      0% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+      }
+      50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+      }
+    }
+
     @keyframes pulse {
-        0% {
-            transform: scale(1.0);
-        }
-        50% {
-            transform: scale(1.1);
-        }
-        100% {
-          transform: scale(1.0);
-        }
+      0% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+      }
+      50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+      }
     }
 
     .new {
@@ -47,7 +65,9 @@
       margin: 0 0.5em;
       background-color: rgb(255,115,0);
       padding: 0.25em 0.5em;
+      -webkit-box-shadow: 0 0 0 rgba(204,169,44, 0.4);
       box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+      -webkit-animation: pulse 2s infinite;
       animation: pulse 2s infinite;
     }
 
@@ -131,10 +151,10 @@
         <div class="easy_nav-dropdown-outer">
           <div class="easy_nav-dropdown-container">
             <div class="easy_nav-link" style="padding-bottom: 0.5em">
-              <a href="https://finviz.com/forex.ashx">Currency Strength Meter</a>
+              <a href="https://finviz.com/forex.ashx" target="_blank">Currency Strength Meter</a>
             </div>
             <div class="easy_nav-link">
-              <a href="https://www.forexfactory.com/calendar.php">Forex Calendar</a>
+              <a href="https://www.forexfactory.com/calendar.php" target="_blank">Forex Calendar</a>
             </div>
           </div>
         </div>
