@@ -264,6 +264,23 @@
   background-size: cover !important;
 }
 
+.section .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.section_text-highlight {
+  display: inline;
+  background: #ff7300;
+  color: #fff;
+  -webkit-box-shadow: 10px 0 0 #ff7300, -10px 0 0 #ff7300;
+  box-shadow: 10px 0 0 #ff7300, -10px 0 0 #ff7300;
+  padding: 0.5em;
+  line-height: 1.75em;
+  font-size: 25px;
+}
+
 .features {
   background-color: #fff;
   padding: 100px 0;
@@ -280,15 +297,16 @@
 }
 
 .join {
+  background: url('../images/join.jpg') center no-repeat;
   color: #000;
 }
 
 .telegram {
   padding: 0 !important;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f6d365), to(#fda085));
-  background-image: -webkit-linear-gradient(left, #f6d365 0%, #fda085 100%);
-  background-image: -o-linear-gradient(left, #f6d365 0%, #fda085 100%);
-  background-image: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#48c6ef), to(#6f86d6));
+  background-image: -webkit-linear-gradient(bottom, #48c6ef 0%, #6f86d6 100%);
+  background-image: -o-linear-gradient(bottom, #48c6ef 0%, #6f86d6 100%);
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
   display: table;
   width: 100%
 }
@@ -299,7 +317,11 @@
 }
 
 .icmarkets {
-  background: url(https://www.icmarkets.com/assets/img/single_market_page/refer-a-friend-facts-bg.png) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.15)), to(rgba(0,0,0,0.15))), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), -webkit-radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background: -o-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), -o-radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+  background-blend-mode: multiply,multiply;
   background-size: cover;
 }
 
@@ -318,6 +340,7 @@
 .button {
   background-color: #ff7300 !important;
   border-color: #ff7300 !important;
+  margin-top: 2em;
 }
 
 .button:hover {
@@ -329,6 +352,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .fas {
   color: #FF7300;
+  margin-top: 0.25em;
 }
 .large {
   font-size: 10em;
