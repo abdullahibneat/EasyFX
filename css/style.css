@@ -350,7 +350,7 @@
 
 /* Font Awesome
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.fas {
+.fas, .fab {
   color: #FF7300;
   margin: 0.25em 0;
 }
@@ -366,9 +366,13 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 footer {
-  padding: 100px 0;
+  padding-top: 100px;
   background-color: #ff7d00;
   color: #fff;
+}
+
+footer ul {
+  list-style-type: none;
 }
 
 footer a {
@@ -380,6 +384,26 @@ footer a {
 
 footer a:hover {
   color: #fff;
+}
+
+footer .social {
+  display: inline;
+  font-size: 1.25em;
+  padding: 5px;
+}
+
+footer .fab {
+  color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+  footer, footer a {
+    text-align: center;
+  }
+
+  .mobile-margin {
+    margin-top: 1.5em;
+  }
 }
 
 .copyright {
