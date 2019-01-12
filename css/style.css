@@ -47,13 +47,13 @@
   justify-content: center;
 }
 
-.easy_logo {
+.easy_logo, .easy_logo::after {
   content: url('../images/logo.png');
   max-width: 10em;
   transition: .2s;
 }
 
-.easy_logo-scroll {
+.easy_logo-scroll, .easy_logo-scroll::after {
   content: url('../images/logo_black.png');
   max-width: 5em;
 }
