@@ -9,22 +9,15 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .easy_nav-container {
   font-size: 1.2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: fixed;
   width: 100%;
-  -webkit-box-sizing : border-box;
   box-sizing : border-box;
   padding: 75px 50px 50px;
   font-family: sans-serif;
   color: #fff;
   z-index: 1;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -41,7 +34,6 @@
 .easy_nav-scroll {
   padding: 20px;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 5px 0 rgba(51,51,51,.2);
   box-shadow: 0 0 5px 0 rgba(51,51,51,.2);
 }
 
@@ -50,22 +42,14 @@
 }
 
 .easy_logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .easy_logo {
   content: url('../images/logo.png');
   max-width: 10em;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
   transition: .2s;
 }
 
@@ -79,8 +63,6 @@
 }
 
 .easy_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -98,15 +80,8 @@
 }
 
 .easy_nav-dropdown-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -115,7 +90,6 @@
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
@@ -149,19 +123,13 @@
   .easy_nav-dropdown-container {
     background-color: #fff;
     padding: 20px;
-    -webkit-box-shadow: inset 0 0 5px 0 rgba(51,51,51,.2);
     box-shadow: inset 0 0 5px 0 rgba(51,51,51,.2);
   }
 }
 
 @media only screen and (max-width: 768px) {
   .easy_nav, .easy_nav-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -217,8 +185,6 @@
   }
 
   .easy_nav-toggle-show {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     color: #000;
   }
@@ -228,7 +194,6 @@
   }
 
   .easy_nav-toggle {
-    -ms-flex-item-align: end;
     align-self: flex-end;
     display: initial;
     position: absolute;
@@ -274,7 +239,6 @@
   display: inline;
   background: #ff7300;
   color: #fff;
-  -webkit-box-shadow: 10px 0 0 #ff7300, -10px 0 0 #ff7300;
   box-shadow: 10px 0 0 #ff7300, -10px 0 0 #ff7300;
   padding: 0.5em;
   line-height: 1.75em;
@@ -293,7 +257,7 @@
 
 .features .fas {
   font-size: 2em;
-  color: #ff7300;;
+  color: #ff7300;
 }
 
 .join {
@@ -303,9 +267,6 @@
 
 .telegram {
   padding: 0 !important;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#48c6ef), to(#6f86d6));
-  background-image: -webkit-linear-gradient(bottom, #48c6ef 0%, #6f86d6 100%);
-  background-image: -o-linear-gradient(bottom, #48c6ef 0%, #6f86d6 100%);
   background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
   display: table;
   width: 100%
@@ -317,9 +278,6 @@
 }
 
 .icmarkets {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.15)), to(rgba(0,0,0,0.15))), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), -webkit-radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background: -o-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), -o-radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
   background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
   background-blend-mode: multiply,multiply;
   background-size: cover;
@@ -402,7 +360,7 @@ footer .fab {
   }
 
   .mobile-margin {
-    margin-top: 1.5em;
+    margin-top: 1.25em;
   }
 }
 
