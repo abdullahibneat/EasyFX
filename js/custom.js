@@ -6,17 +6,31 @@ function easy_nav_toggle() {
   document.getElementById('easy_nav-container').classList.toggle('easy_nav-mobile');
   document.getElementsByClassName('easy_nav-toggle')[0].classList.toggle('easy_nav-toggle-show');
   document.getElementById('easy_logo').classList.toggle('easy_logo-mobile');
+  if (document.getElementById('easy_logo').classList.contains('easy_logo-mobile')) {
+    document.getElementById('easy_logo').src = "../images/logo_black.png";
+  }
+  else if (document.body.scrollTop < 50 || document.documentElement.scrollTop < 50) {
+    document.getElementById('easy_logo').src = "../images/logo.png";
+  }
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById('easy_logo').src = "../images/logo_black.png";
+  }
 }
 
 function navScroll() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById('easy_nav-container').classList.add('easy_nav-scroll');
     document.getElementById('easy_logo').classList.add('easy_logo-scroll');
-    document.getElementById('easy_logo').src = "../images/logo_black.png"
+    document.getElementById('easy_logo').src = "../images/logo_black.png";
   } else {
     document.getElementById('easy_nav-container').classList.remove('easy_nav-scroll');
     document.getElementById('easy_logo').classList.remove('easy_logo-scroll');
-    document.getElementById('easy_logo').src = "../images/logo.png"
+    if (document.getElementById('easy_logo').classList.contains('easy_logo-mobile')) {
+      document.getElementById('easy_logo').src = "../images/logo_black.png";
+    }
+    else {
+      document.getElementById('easy_logo').src = "../images/logo.png";
+    }
   }
 }
 
