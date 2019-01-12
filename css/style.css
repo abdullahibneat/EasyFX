@@ -47,19 +47,13 @@
   justify-content: center;
 }
 
-.easy_logo, .easy_logo::after {
-  content: url('../images/logo.png');
+.easy_logo {
   max-width: 10em;
   transition: .2s;
 }
 
-.easy_logo-scroll, .easy_logo-scroll::after {
-  content: url('../images/logo_black.png');
+.easy_logo-scroll {
   max-width: 5em;
-}
-
-.easy_nav-link {
-  padding-right: 8px;
 }
 
 .easy_nav {
@@ -161,10 +155,6 @@
   .easy_logo-scroll {
     max-width: 3em;
     margin-top: 5px;
-  }
-
-  .easy_logo-mobile {
-    content: url('../images/logo_black.png');
   }
 
   .easy_nav-link {

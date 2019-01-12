@@ -12,9 +12,11 @@ function navScroll() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById('easy_nav-container').classList.add('easy_nav-scroll');
     document.getElementById('easy_logo').classList.add('easy_logo-scroll');
+    document.getElementById('easy_logo').src = "../images/logo_black.png"
   } else {
     document.getElementById('easy_nav-container').classList.remove('easy_nav-scroll');
     document.getElementById('easy_logo').classList.remove('easy_logo-scroll');
+    document.getElementById('easy_logo').src = "../images/logo.png"
   }
 }
 
