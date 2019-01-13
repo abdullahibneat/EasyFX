@@ -41,3 +41,5 @@ AOS.init({
 
 document.querySelector('.easy_nav-toggle').addEventListener('click', easy_nav_toggle);
 window.onscroll = function() {navScroll()};
+MCPopupClosed
+document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";

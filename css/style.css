@@ -65,7 +65,6 @@
 }
 
 .easy_nav-toggle {
-  display: none;
   color: #fff;
 }
 
@@ -94,6 +93,10 @@
 
   .easy_logo {
     width: 10vw;
+  }
+
+  .easy_nav-toggle {
+    display: none;
   }
 
   .easy_nav-dropdown-outer {
