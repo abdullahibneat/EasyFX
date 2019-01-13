@@ -69,6 +69,11 @@
   color: #fff;
 }
 
+.easy_nav-link {
+  display: flex;
+  text-align: center;
+}
+
 .easy_nav-dropdown-container {
   display: flex;
   flex-direction: column;
@@ -159,7 +164,7 @@
 
   .easy_nav-link {
     padding: 0.5em;
-    font-size: 1.5em;
+    font-size: 6vw;
   }
 
   .easy_nav-right {
@@ -188,20 +193,12 @@
     right: 10px;
   }
 
-  .easy_nav-dropdown-container .easy_nav-link {
-    font-size: 1em;
-  }
-
   .easy_nav-dropdown-button {
     padding: 0;
   }
 
   .easy_nav-dropdown-button-text {
     display: none;
-  }
-
-  .easy_nav-dropdown-outer {
-    padding-top: 5px;
   }
 }
 
