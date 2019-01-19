@@ -9,6 +9,8 @@ social_handle: easyfx1
 telegram: WolfofFX1
 email: info@easyfx1.net
 
+permalink: /:title/
+
 url: https://easyfx1.net
 
 defaults:
