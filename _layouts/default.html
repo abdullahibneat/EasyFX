@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+</head>
+<body style="z-index: 0">
+<!-- Begin Body
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- Nav bar
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {% include navbar.html %}
+
+  <!-- Page content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {{ content }}
+
+  <!-- Join
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {% include join.html %}
+
+  <!-- Telegram & ICMarkets
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {% include telegram-ic.html %}
+
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {% include footer.html %}
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="{{ site.url }}/assets/js/custom.js"></script>
+
+<!-- End Body
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

@@ -1,0 +1,66 @@
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.author }}
+    {% else %}
+      {{ site.name }}
+    {% endif %}
+  </title>
+  {% if page.noindex == false %}
+    <meta name="description" content="
+      {% if page.description %}
+        {{ page.description }}
+      {% else %}
+        {{ site.description }}
+      {% endif %}
+    ">
+    <meta name="author" content="{{ site.author }}">
+
+    <!-- OpenGraph
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.url }}">
+    <meta name="twitter:creator" content="@{{ site.social_handle }}">
+    <meta property="og:title" content="
+      {% if page.title %}
+        {{ page.title }} | {{ site.author }}
+      {% else %}
+        {{ site.name }}
+      {% endif %}
+    ">
+    <meta property="og:description" content="
+      {% if page.description %}
+        {{ page.description }}
+      {% else %}
+        {{ site.description }}
+      {% endif %}
+    ">
+    <meta property="og:image" content="{{ site.url }}/assets/images/ft.jpg">
+  {% else %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  {% if page.style %}
+    <style type="text/css">{{ page.style }}</style>
+  {% endif %}
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{{ site.url }}/assets/images/favicon.png">
+
+  <!-- MailChimp
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5bdcc60eba905d5cfc42bd635/84ad8799eef530fc2ffc4bcb3.js");</script>

@@ -1,0 +1,19 @@
+name: "EasyFX | Easy Pips - Easy Signals - Easy Life."
+description: "EasyFX trading experts spot market opportunities and provide you with profitable, easy to follow trading signals sent directly to your mobile device in real-time."
+author: "EasyFX"
+timezone: Europe/London
+
+footer_text: "Stocks, Options, Binary options, Forex and Future trading has large potential rewards, but also large potential risk. You must be aware of the risks and be willing to accept them in order to invest in the stock, binary options or futures markets."
+
+social_handle: easyfx1
+telegram: WolfofFX1
+email: info@easyfx1.net
+
+url: https://easyfx1.net
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      noindex: false
